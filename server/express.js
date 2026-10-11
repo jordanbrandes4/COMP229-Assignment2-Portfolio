@@ -8,6 +8,7 @@ import contactRoutes from './routes/contact.routes.js'
 import educationRoutes from './routes/education.routes.js'
 import projectRoutes from './routes/project.routes.js'
 import userRoutes from './routes/user.routes.js'
+import authRoutes from './routes/auth.routes.js'
 const app = express()
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -19,4 +20,5 @@ app.use('/', contactRoutes)
 app.use('/', educationRoutes)
 app.use('/', projectRoutes)
 app.use('/', userRoutes)
+app.use('/', authRoutes)
 export default app
